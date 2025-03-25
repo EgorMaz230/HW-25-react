@@ -1,0 +1,75 @@
+/* Общие стили для страницы отзывов */
+.reviews-container {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #141414;
+    color: white;
+    padding: 40px 20px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .reviews-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #e50914;
+  }
+  
+  /* Стили для списка отзывов */
+  .reviews-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .reviews-list li {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .reviews-list li:hover {
+    transform: translateY(-10px);
+  }
+  
+  .reviews-list p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  
+  .review-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .review-content {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Кнопка "Назад" */
+  .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #e50914;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #b20710;
+  }
+  

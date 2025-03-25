@@ -1,0 +1,105 @@
+/* Основной контейнер страницы */
+.movie-details-container {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #141414;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .movie-details-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .movie-details-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  /* Изображение постера */
+  .movie-poster {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-poster:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Дополнительная информация */
+  .additional-info {
+    margin-top: 40px;
+  }
+  
+  .additional-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e50914;
+  }
+  
+  /* Ссылки для актёров и отзывов */
+  .additional-info .info-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .additional-info .info-links a {
+    color: #e50914;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #e50914;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .additional-info .info-links a:hover {
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Кнопка "Назад к поиску" */
+  .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #e50914;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #b20710;
+  }
+  
+  /* Мобильная адаптивность */
+  @media (max-width: 768px) {
+    .movie-details-container h1 {
+      font-size: 2.2rem;
+    }
+  
+    .movie-poster {
+      max-width: 90%;
+    }
+  
+    .movie-details-container p {
+      font-size: 1rem;
+    }
+  }
+  
